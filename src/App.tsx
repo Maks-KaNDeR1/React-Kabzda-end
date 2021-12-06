@@ -7,6 +7,7 @@ function App() {
     return (
         <div>
             <PageTitle title={"Hello, my friends"}/>
+            <Accordion title={"Accordidfon"}/>
             <PageTitle title={"App components"}/>
             <Rating value={0}/>
             <Rating value={1}/>
@@ -22,5 +23,26 @@ function PageTitle(props: any) {
     console.log("AppTitle rendering")
     return <h1>{props.title}</h1>
 }
+
+function Accordion(props: any) {
+    console.log("Accotdion rendering")
+return <div>
+    <AccordionTitle title={props.title} />
+    <AccordionBody />
+</div>
+}
+
+function AccordionTitle(props: any) {
+    return (
+        <h3>{props.title}</h3>
+    )
+}function AccordionBody() {
+    return (
+      <h3>Menu</h3>           )
+}
+
+
+
+
 
 export default App;
