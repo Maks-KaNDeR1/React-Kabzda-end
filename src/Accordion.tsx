@@ -1,4 +1,3 @@
-import React from "react";
 
 type AccordionPropsType = {
     titleValue: string
@@ -17,7 +16,6 @@ function Accordion(props: AccordionPropsType) {
             <AccordionTitle title={props.titleValue}/>
         </div>
     }
-
 }
 
 type AccordionTitlePropsType = {

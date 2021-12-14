@@ -10,7 +10,6 @@ function App() {
             <Accordion titleValue={"Accordidfon"} collapsed={false}/>
             <PageTitle title={"App components"}/>
             <Accordion titleValue={"GROT"} collapsed={true}/>
-
         </div>
     );
 }
